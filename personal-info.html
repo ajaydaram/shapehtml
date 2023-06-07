@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Information</title>
+    <link rel="stylesheet" type="text/css" href="personal-info.css">
+</head>
+<body>
+<div class="container">
+    <h1>Personal Information</h1>
+    <form id="personal-info-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <small>Format: 123-456-7890</small>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" max="100" required>
+        </div>
+        <div class="form-group">
+            <label for="church">Church:</label>
+            <input type="text" id="church" name="church" required>
+        </div>
+        <div class="form-group">
+            <label>Baptized:</label>
+            <input type="radio" id="baptized-yes" name="baptized" value="yes" required>
+            <label for="baptized-yes">Yes</label>
+            <input type="radio" id="baptized-no" name="baptized" value="no" required>
+            <label for="baptized-no">No</label>
+        </div>
+        <div class="form-group">
+            <label>Member:</label>
+            <input type="radio" id="member-yes" name="member" value="yes" required>
+            <label for="member-yes">Yes</label>
+            <input type="radio" id="member-no" name="member" value="no" required>
+            <label for="member-no">No</label>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="container">
+    <h1>Ministry in Church</h1>
+    <form id="ministry-form">
+        <div class="form-group">
+            <label>Are involved in any ministry in your church?</label>
+            <input type="radio" id="ministry-yes" name="ministry" value="yes" required>
+            <label for="ministry-yes">Yes</label>
+            <input type="radio" id="ministry-no" name="ministry" value="no" required>
+            <label for="ministry-no">No</label>
+        </div>
+        <div class="form-group" id="ministry-details" style="display: none;">
+            <label for="ministry-text">If yes, please describe your involvement:</label>
+            <textarea id="ministry-text" name="ministry-text"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<script src="personal-info.js"></script>
+</body>
+</html>
