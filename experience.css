@@ -1,0 +1,71 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Style the main content */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Style the list */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Style the list items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Style the paragraphs */
+p {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Style the section */
+section {
+    margin-top: 20px;
+}
+
+/* Style the section heading */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the section description */
+section p {
+    margin-bottom: 20px;
+}
+
+/* Style the text areas */
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
