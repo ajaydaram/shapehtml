@@ -1,45 +1,146 @@
+/* Reset default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body font and background color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style the header */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
 }
 
-h1 {
-    font-size: 36px;
-    margin: 0;
+/* Style the main content */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    font-size: 24px;
-    margin: 0;
-}
-
-span {
-    font-size: 16px;
-}
-
+/* Style the form */
 form {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Style the form labels */
 label {
-    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Style the form inputs */
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     margin-bottom: 10px;
 }
 
-input {
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: none;
-}
-
-button {
-    padding: 10px 20px;
+/* Style the form submit button */
+button[type="submit"] {
     background-color: #333;
     color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 }
+
+/* Style the form submit button on hover */
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the table headings */
+th {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style the table data */
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Style the table data on hover */
+tr:hover td {
+    background-color: #f2f2f2;
+}
+
+.container-4-2 {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.container-4-2-heading-para {
+    margin-bottom: 10px;
+}
+
+.s4-2-heading {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+.s4-2-paragraph {
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+.container-4-2-heading-para-2 {
+    margin-top: 10px;
+}
+
+.step-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.step-paragraph {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.remarks-container {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.remarks-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.remarks-paragraph {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+

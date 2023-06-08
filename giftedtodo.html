@@ -10,20 +10,283 @@
     <h2>What I'm Gifted to Do <span>(Do this before filling up the spiritual inventory)</span></h2>
 </header>
 <main>
-    <form>
+    <form method="POST" action="submit-form.php">
         <label for="my-gifts">Spiritual gifts I believe I have are:</label>
         <input type="text" id="my-gifts" name="my-gifts" required>
         <label for="primary-gifts">Spiritual gifts from Spiritual Gifts Test (Primary Gifts):</label>
-        <input type="text" id="primary-gifts" name="primary-gifts" required>
-        <input type="text" id="primary-gifts" name="primary-gifts" required>
-        <input type="text" id="primary-gifts" name="primary-gifts" required>
+        <input type="text" id="primary-gifts-1" name="primary-gifts[]" required>
+        <input type="text" id="primary-gifts-2" name="primary-gifts[]" required>
+        <input type="text" id="primary-gifts-3" name="primary-gifts[]" required>
         <label for="secondary-gifts">Spiritual gifts from Spiritual Gifts Test (Secondary Gifts):</label>
-        <input type="text" id="secondary-gifts" name="secondary-gifts" required>
-        <input type="text" id="secondary-gifts" name="secondary-gifts" required>
-        <input type="text" id="secondary-gifts" name="secondary-gifts" required>
+        <input type="text" id="secondary-gifts-1" name="secondary-gifts[]" required>
+        <input type="text" id="secondary-gifts-2" name="secondary-gifts[]" required>
+        <input type="text" id="secondary-gifts-3" name="secondary-gifts[]" required>
         <button type="submit">Submit</button>
     </form>
 </main>
+<section>
+    <table>
+        <thead>
+        <tr>
+            <th>No.</th>
+            <th>Spiritual Gift</th>
+            <th>Contributes</th>
+            <th>Characteristics</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Administration</td>
+            <td></td>
+            <td>The divine enablement to understand what makes an organisation
+                functions and the speciality to. plan and execute procedures that
+                accomplish the goals of the ministry.Able ot develop strategies or plans
+                ot reach identified goals; assist ministries to become more effective
+                and efficient; create order out of organisational chaos; manage or
+                coordinate a variety of responsibilities t o accomplish a task; organise
+                people, tasks or events</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Apostleship</td>
+            <td></td>
+            <td>The divine ability ot start and oversee the development of new churches or ministry structures. Able to pioneer and establish new ministries or churches; adapt to different surroundings by being culturally sensitive and aware; desire to minister to unreached people in other communities or countries; have responsibilities ot oversee ministries or groups of churches; demonstrate authority and vision for the mission of the church.</td>
+        </tr>
+        <!-- Add more rows as needed -->
+        <tr>
+            <td>3</td>
+            <td>Creative Communication</td>
+            <td></td>
+            <td>The divine enablement to communicate God' truth through a variety of
+                art forms. Able to use the arts to communicate God's truth; develop and
+                use artistic skills such as drama, writing, art, music, dance, etc; use
+                variety and creativity to captivate people and cause them to consider
+                Christ's message; challenge people's perspective of God through
+                various forms of the arts; demonstrate fresh ways to express the Lord's
+                ministry and message.</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Discernment</td>
+            <td></td>
+            <td>The divine enablement to distinguish between truth and error, good and
+                evil, right and wrong. Able to distinguish between truth and error,
+                good and evil, right and wrong; evaluate the spiritual or moral
+                status of a person, situation or object; recognise motivation and
+                intentions of the heart; identify deception in others.</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Encouragement</td>
+            <td></td>
+            <td>The divine enablement to present truth so as to strengthen, comfort or
+                urge to action those who are discouraged or wavering in their faith.
+                Able to encourage others through the written or spoken word; use
+                examples from Scripture to illustrate a point; challenge others to
+                action; motivate others to follow through on a project, goal or
+                assignment; help others to see their potential in Christ.</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Evangelism</td>
+            <td></td>
+            <td>The divine enablement to effectively communicate the gospel to
+                unbelievers so they respond in faith and move toward discipleship.
+                Able to communicate the gospel in a way that is clear, concise and
+                understandable to a variety of people with differing backgrounds and
+                interests; communicate a sense of urgency for the lost; effectively
+                communicate the gospel in a one-on-one situation; effectively
+                communicate the gospel in a group situation; communicate the gospel
+                in a culturally relevant way.</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Faith</td>
+            <td></td>
+            <td>The divine enablement to act on God's promises with confidence and unwavering belief in God's ability to fulfil his purposes. Able to believe the promises of God and inspire others to do the same; act in complete confidence of God's ability to overcome obstacles; demonstrate an attitude of trust in God's will and his promises; advance the cause of Christ because they go forward when others will not; ask God for what is needed and trust him for his provision.</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Giving</td>
+            <td></td>
+            <td>The divine enablement to contribute money and resources to the work of the Lord with cheerfulness and liberality.It does not ask, "How much money do I give to God?" but, "How much of God's money to I keep?" Able to manage their finances and limit their lifestyle in order to give as much of their resources as possible; support the work of ministry with sacrificial gifts to advance the Kingdom; meet tangible needs that enable spiritual growth to occur; provide resources, generously and cheerfully, trusting God for His provision; may have a special ability to make money so that they may use it to further God's work.</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Healing</td>
+            <td></td>
+            <td>The divine enablement to contribute money and resources to the work of the Lord with cheerfulness and liberality.It does not ask, "How much money do I give to God?" but, "How much of God's money to I keep?" Able to manage their finances and limit their lifestyle in order to give as much of their resources as possible; support the work of ministry with sacrificial gifts to advance the Kingdom; meet tangible needs that enable spiritual growth to occur; provide resources, generously and cheerfully, trusting God for His provision; may have a special ability to make money so that they may use it to further God's work.</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Helps</td>
+            <td></td>
+            <td>The divine enablement to accomplish practical and necessary tasks which free-up, support, and meet the needs of others. Able to serve behind the scenes wherever needed to support the gifts and ministries of others; seen the tangible and practical things to be done and enjoy doing them; sense God" purpose and pleasure ni meeting everyday responsibilities; attach spiritual</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Hospitality</td>
+            <td></td>
+            <td>The divine enablement to care for people by providing fellowship, food, and shelter Able to provide environment where people feel valued and cared for; meet new people and help them ot feel welcomed; create a safe and comfortable setting where relationships can develop; seek ways to connect people together meaningful relationships; set people at ease in unfamiliar surroundings.</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Intercession</td>
+            <td></td>
+            <td>The divine enablement to consistently pray on behalf of and for others, seeing frequent and specific results.Able to feel compelled to earnestly pray on behalf of someone Or some cause; have a daily awareness of the spiritual battles being waged and pray; are convinced God moves in direct response to prayer; pray in response to the leading of the spirit, whether they understand ti or not; exercise authority and power for the protection of others and the equipping of them ot serve</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Interpretation</td>
+            <td></td>
+            <td>The divine enablement to make known to the body of Christ the message of one who is speaking in tongues. Able to respond to a message spoken in tongues by giving an interpretation; glorify God and demonstrate his power through this miraculous manifestation; edify the body by interpreting a timely message from God; understand an unlearned language and communicate that message to hte body of Christ; are sometimes prophetic when exercising an interpretation of tongues for the church.</td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Encouragement</td>
+            <td></td>
+            <td>The divine enablement to present truth so as to strengthen, comfort or
+                urge to action those who are discouraged or wavering in their faith.
+                Able to encourage others through the written or spoken word; use
+                examples from Scripture to illustrate a point; challenge others to
+                action; motivate others to follow through on a project, goal or
+                assignment; help others to see their potential in Christ.</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Evangelism</td>
+            <td></td>
+            <td>The divine enablement to effectively communicate the gospel to
+                unbelievers so they respond in faith and move toward discipleship.
+                Able to communicate the gospel in a way that is clear, concise and
+                understandable to a variety of people with differing backgrounds and
+                interests; communicate a sense of urgency for the lost; effectively
+                communicate the gospel in a one-on-one situation; effectively
+                communicate the gospel in a group situation; communicate the gospel
+                in a culturally relevant way.</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Encouragement</td>
+            <td></td>
+            <td>The divine enablement to present truth so as to strengthen, comfort or
+                urge to action those who are discouraged or wavering in their faith.
+                Able to encourage others through the written or spoken word; use
+                examples from Scripture to illustrate a point; challenge others to
+                action; motivate others to follow through on a project, goal or
+                assignment; help others to see their potential in Christ.</td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Evangelism</td>
+            <td></td>
+            <td>The divine enablement to effectively communicate the gospel to
+                unbelievers so they respond in faith and move toward discipleship.
+                Able to communicate the gospel in a way that is clear, concise and
+                understandable to a variety of people with differing backgrounds and
+                interests; communicate a sense of urgency for the lost; effectively
+                communicate the gospel in a one-on-one situation; effectively
+                communicate the gospel in a group situation; communicate the gospel
+                in a culturally relevant way.</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Encouragement</td>
+            <td></td>
+            <td>The divine enablement to present truth so as to strengthen, comfort or
+                urge to action those who are discouraged or wavering in their faith.
+                Able to encourage others through the written or spoken word; use
+                examples from Scripture to illustrate a point; challenge others to
+                action; motivate others to follow through on a project, goal or
+                assignment; help others to see their potential in Christ.</td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>Evangelism</td>
+            <td></td>
+            <td>The divine enablement to effectively communicate the gospel to
+                unbelievers so they respond in faith and move toward discipleship.
+                Able to communicate the gospel in a way that is clear, concise and
+                understandable to a variety of people with differing backgrounds and
+                interests; communicate a sense of urgency for the lost; effectively
+                communicate the gospel in a one-on-one situation; effectively
+                communicate the gospel in a group situation; communicate the gospel
+                in a culturally relevant way.</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Encouragement</td>
+            <td></td>
+            <td>The divine enablement to present truth so as to strengthen, comfort or
+                urge to action those who are discouraged or wavering in their faith.
+                Able to encourage others through the written or spoken word; use
+                examples from Scripture to illustrate a point; challenge others to
+                action; motivate others to follow through on a project, goal or
+                assignment; help others to see their potential in Christ.</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Evangelism</td>
+            <td></td>
+            <td>The divine enablement to effectively communicate the gospel to
+                unbelievers so they respond in faith and move toward discipleship.
+                Able to communicate the gospel in a way that is clear, concise and
+                understandable to a variety of people with differing backgrounds and
+                interests; communicate a sense of urgency for the lost; effectively
+                communicate the gospel in a one-on-one situation; effectively
+                communicate the gospel in a group situation; communicate the gospel
+                in a culturally relevant way.</td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>Encouragement</td>
+            <td></td>
+            <td>The divine enablement to present truth so as to strengthen, comfort or
+                urge to action those who are discouraged or wavering in their faith.
+                Able to encourage others through the written or spoken word; use
+                examples from Scripture to illustrate a point; challenge others to
+                action; motivate others to follow through on a project, goal or
+                assignment; help others to see their potential in Christ.</td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+<section class="container-4-2">
+    <div class="container-4-2-heading-para">
+    <h2 class="s4-2-heading">4.2 Spiritual Gift Assessment Exercise</h2>
+    <p class="s4-2-paragraph">You are about to become involved in an exciting spiritual exercise. There are 108 questions to be answered. Follow these steps</p>
+    </div>
+    <div class="container-4-2-heading-para-2">
+        <h3 class="step-heading">Step 1:</h3>
+        <p class="step-paragraph">
+        Go through the 108 statements and circle the extent of the statement that is true in
+        your life. 3 for MUCH, 2 for SOME, 1 for LITTLE and 0 for NOT AT ALL.
+        DO NOT SCORE ACCORDING TO WHAT YOU THINK SHOULD BE TRUE
+        OR HOPE MIGHT BE TRUE IN FUTURE. BE HONEST AND SCORE ON THE BASIS OF EXPERIENCE.</p>
+        <h3 class="step-heading">Step 2:</h3>
+        <p class="step-paragraph">
+        After you have completed all the statements, transfer yourscore on to the ANSWER SHEET and follow the instructions therein.</p>
+        <h3 class="step-heading">Step 3:</h3>
+        <p class="step-paragraph">
+            List the three Spiritual Gifts that have the highest score in the PRIMARY box and those with the next three highest score in the SECONDARY box.</p>
+        <h3 class="step-heading">Step 4:</h3>
+        <p class="step-paragraph">
+        Share with the rest of your members your PRIMARY and SECONDARY lists, explaining whether you tend to agree or disagree with the findings.</p>
+        <h3 class="step-heading">Step 5:</h3>
+        <p class="step-paragraph">Allow the other members to affirm your sharing. Often, you will not be aware of what others have appreciated about you or noticed about your abilities in ministry situations. You may also share with other church members outside your Care Group for more affirmation.</p>
+        <h3 class="step-heading">Step 6:</h3>
+        <p class="step-paragraph">
+        Review the List of Ministry Opportunities ni Calvary Baptist Church (Annex A) and express your interest to serve in the relevant ministry team to exercise your Spiritual Gifts).</p>
+
+    </div>
+</section>
+<section class="remarks-container">
+    <h3 class="remarks-heading">Remarks:</h3>
+    <p class="remarks-paragraph">.1 Healing, Interpretation, Miracles and Tongues are not included in the assessment because their presence in the life ofa believer would be obvious and self-evident.</p>
+        <p> 2. Healing, Interpretation, Miracles and Tongues tend to divide the Body of Christ when the issues are not adequately addressed from a balanced perspective. For the sake of harmony, they are thus excluded in this assessment questionnaire. They are best understood with further studies.</p>
+</section>
 <script src="giftedtodo.js"></script>
 </body>
 </html>
